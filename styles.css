@@ -22,6 +22,19 @@ a {
   color: #333;
 }
 
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #ff6f61;
+  color: #fff;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #ff4a3d;
+}
+
 /* Header */
 header {
   background: #fff;
@@ -54,10 +67,6 @@ nav ul li a {
   font-weight: bold;
 }
 
-nav ul li a.active {
-  color: #ff6f61;
-}
-
 /* Hero Section */
 .hero {
   background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
@@ -76,123 +85,154 @@ nav ul li a.active {
   margin: 10px 0 20px;
 }
 
-/* Our Story Section */
-.our-story {
+/* Course Overview Section */
+.overview {
   padding: 50px 0;
   text-align: center;
 }
 
-.our-story p {
+.overview p {
   max-width: 800px;
   margin: 0 auto 20px;
 }
 
-/* Our Mission Section */
-.our-mission {
-  padding: 50px 0;
-  background: #f9f9f9;
-  text-align: center;
-}
-
-.our-mission p {
-  max-width: 800px;
-  margin: 0 auto 20px;
-}
-
-.mission-icons {
+.features {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   margin-top: 30px;
 }
 
-.mission-icons .icon-item {
-  text-align: center;
-  margin: 10px;
-}
-
-.mission-icons .icon-item i {
-  font-size: 2rem;
-  color: #ff6f61;
-}
-
-.mission-icons .icon-item p {
-  margin: 10px 0 0;
-}
-
-/* Our Team Section */
-.our-team {
-  padding: 50px 0;
-  text-align: center;
-}
-
-.our-team p {
-  max-width: 800px;
-  margin: 0 auto 20px;
-}
-
-.team-members {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-.team-member {
-  text-align: center;
-  margin: 10px;
-}
-
-.team-member img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  margin-bottom: 10px;
-}
-
-.team-member h3 {
-  margin: 10px 0;
-}
-
-.team-member p {
-  color: #777;
-}
-
-/* Our Values Section */
-.our-values {
-  padding: 50px 0;
-  background: #f9f9f9;
-  text-align: center;
-}
-
-.our-values p {
-  max-width: 800px;
-  margin: 0 auto 20px;
-}
-
-.values-list {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-.value-item {
+.feature-item {
   text-align: center;
   margin: 10px;
   width: 30%;
   min-width: 250px;
 }
 
-.value-item i {
+.feature-item i {
   font-size: 2rem;
   color: #ff6f61;
 }
 
-.value-item h3 {
+.feature-item h3 {
   margin: 10px 0;
 }
 
-.value-item p {
+.feature-item p {
   color: #777;
+}
+
+/* Products Section */
+.products {
+  padding: 50px 0;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.product-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.product-item {
+  background: #fff;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  min-width: 250px;
+}
+
+.product-item img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.product-item h3 {
+  margin: 10px 0;
+}
+
+.product-item p {
+  color: #777;
+}
+
+.product-item span {
+  font-weight: bold;
+  color: #ff6f61;
+}
+
+/* Testimonials Section */
+.testimonials {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.testimonial-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.testimonial-item {
+  background: #fff;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  min-width: 250px;
+}
+
+.testimonial-item img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.testimonial-item p {
+  color: #777;
+}
+
+.testimonial-item span {
+  font-weight: bold;
+  color: #444;
+}
+
+/* Contact Section */
+.contact {
+  padding: 50px 0;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.contact form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact input, .contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact button {
+  background: #ff6f61;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact button:hover {
+  background: #ff4a3d;
 }
 
 /* Footer */
@@ -207,13 +247,23 @@ footer p {
   margin: 0;
 }
 
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
-  .mission-icons, .team-members, .values-list {
+  .features, .product-list, .testimonial-list {
     flex-direction: column;
   }
 
-  .value-item {
+  .feature-item, .product-item, .testimonial-item {
     width: 100%;
   }
 }
